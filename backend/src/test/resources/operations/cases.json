@@ -1,0 +1,53 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "REVIEW",
+      "requiredReductionKw": "#20",
+      "candidateReductionKw": "#20",
+      "residualKw": "#0",
+      "scenarioCost": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "reducibleKw": "10"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "scenarioCost": "#500"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "projectedKw": "100"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "pricePerKw": "0",
+      "reducibleKw": "0"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "scenarioCost": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "projectedKw": "0",
+      "contractKw": "0"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  }
+]
